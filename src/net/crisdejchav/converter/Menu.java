@@ -9,7 +9,7 @@ public class Menu {
 
     private int[] options = {0, 0};
     private int index = 0;
-    private Scanner sc;  // Declarar el Scanner como un campo de clase
+    private Scanner sc;
 
     public Menu() {
 
@@ -29,7 +29,7 @@ public class Menu {
         enuMap.put(5, "JPY");
         enuMap.put(6, "RUB");
 
-        sc = new Scanner(System.in);  // Inicializar el Scanner
+        sc = new Scanner(System.in);  
     }
 
     public void showMenu(){
@@ -80,7 +80,7 @@ public class Menu {
         
         index = 0;
         System.out.println("Ingresa un numero para seleccionar una opcion:");
-        option = sc.nextInt();  // Reutiliza el Scanner de la clase
+        option = sc.nextInt();
         
         if (option == 0) {
             System.out.println("Saliendo del programa...");
@@ -111,6 +111,6 @@ public class Menu {
 
     public double getValue() {
         System.out.println("Ingresa el valor a convertir:");
-        return sc.nextDouble();  // Reutiliza el mismo Scanner
+        return sc.nextDouble();  
     }
 }
